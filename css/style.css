@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #222;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 150px;
+    transform: scale(1);
+    transition:  transform .3s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.3);
+
+}
+
+.Row{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+}
+.row-1, .row-2{
+    flex-basis: 50%;
+    flex-grow: 1; 
+}
+
+.row-1{
+    justify-content: space-between;
+    align-items: center;
+}
+.row-2{
+    color: #00feba;
+    
+}
+.info-text{
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    color: #00feba;
+}
+
+.card{
+    width: 90%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #509bf6, #d447f4);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18pxs;
+
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.search button img{
+    width: 16px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left; 
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+    
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+    
+
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top:10px ;
+    display: none;
+}
+.tag{
+    padding: 10px;
+    margin: 10px;
+    color: #00feba;
+    justify-content: end;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .card {
+        max-width: 90%; /* Reduce the maximum width for smaller screens */
+    }
+}
+
+/* Additional styles for the search input and button */
+.search input {
+    width: 80%;
+    padding: 8px;
+}
+
+.search button {
+    width: 20%;
+    padding: 8px;
+}
