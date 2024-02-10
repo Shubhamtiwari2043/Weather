@@ -1,2 +1,5 @@
 # Weather
-This is a Weather website, which I have create to boost my basic programming language
+This is a Weather website, that shows the status of
+the weather- like wind speed, Humidity, temperature, location, and
+type of climate (Sunny, Drizzle, Cloudy, Rainy)
+
